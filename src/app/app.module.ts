@@ -10,6 +10,7 @@ import { FeaturesComponent } from './parts/features/features.component';
 import { DownloadComponent } from './parts/download/download.component';
 import { ContactComponent } from './parts/contact/contact.component';
 import { AboutComponent } from './parts/about/about.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AboutComponent } from './parts/about/about.component';
   ],
   imports: [
     BrowserModule,
-    NgbModule
+    NgbModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
