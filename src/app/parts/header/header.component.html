@@ -19,9 +19,9 @@
                 <li>
                     <a id="lang_selector" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a onclick="$.MultiLanguage('js/language.json', 'en');" href="#">English</a></li>
-                        <li><a onclick="$.MultiLanguage('js/language.json', 'pl');" href="#">Polski</a></li>
-                        <li><a onclick="$.MultiLanguage('js/language.json', 'es');" href="#">Español</a></li>
+                        <li *ngFor="let lang of languages">
+                            <a (click)="changeLanguage(lang.skrot)" href="#">{{ lang.name }}</a>
+                        </li>
                     </ul>
                 </li>
             </ul>
