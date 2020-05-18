@@ -10,13 +10,13 @@ export class AppComponent {
 
   constructor(public translate: TranslateService) {
     // Language list
-    translate.addLangs(['en', 'de', 'es', 'pl', 'ru', 'zh', 'fr', 'hi', 'ja', 'pt', 'it']);
+    translate.addLangs(['en', 'pl']);
     translate.setDefaultLang('en');
 
     // Simple system for checking and loading language choice from localstorage
     if (localStorage.getItem('lang') === null) {
       const browserLang = translate.getBrowserLang();
-      translate.use(browserLang.match(/en|de|es|pl|ru|zh|fr|hi|ja|pt|it/) ? browserLang : 'en');
+      translate.use(browserLang.match(/en|pl/) ? browserLang : 'en');
     } else {
       translate.use(localStorage.getItem('lang'));
     }

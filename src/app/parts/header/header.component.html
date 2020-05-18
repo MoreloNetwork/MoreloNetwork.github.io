@@ -10,17 +10,17 @@
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a id="nav_home" href="#top" class="smoothScroll">HOME</a></li>
-                <li><a id="nav_features" href="#features" class="smoothScroll">FEATURES</a></li>
-                <li><a id="nav_whitepaper" href="MRL-Whitepaper.pdf" class="smoothScroll">WHITEPAPER</a></li>
-                <li><a id="nav_get" href="#download" class="smoothScroll">GET MORELO</a></li>
-                <li><a id="nav_explorer" href="https://mrl.supportcryptonight.com/" class="smoothScroll">BLOCK EXPLORER</a></li>
-                <li><a id="nav_contact" href="#contact" class="smoothScroll">CONTACT</a></li>
+                <li><a id="nav_home" href="#top" class="smoothScroll">{{ 'header.1' | translate | uppercase }}</a></li>
+                <li><a id="nav_features" href="#features" class="smoothScroll">{{ 'header.2' | translate | uppercase }}</a></li>
+                <li><a id="nav_whitepaper" href="MRL-Whitepaper.pdf" class="smoothScroll">{{ 'header.3' | translate | uppercase }}</a></li>
+                <li><a id="nav_get" href="#download" class="smoothScroll">{{ 'header.4' | translate | uppercase }}</a></li>
+                <li><a id="nav_explorer" href="https://mrl.supportcryptonight.com/" class="smoothScroll">{{ 'header.5' | translate | uppercase }}</a></li>
+                <li><a id="nav_contact" href="#contact" class="smoothScroll">{{ 'header.6' | translate | uppercase }}</a></li>
                 <li>
-                    <a id="lang_selector" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English<span class="caret"></span></a>
+                    <a id="lang_selector" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ selectedLang.name | uppercase}}<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li *ngFor="let lang of languages">
-                            <a (click)="changeLanguage(lang.skrot)" href="#">{{ lang.name }}</a>
+                            <a (click)="changeLanguage(lang.abb)" href="#">{{ lang.name | uppercase }}</a>
                         </li>
                     </ul>
                 </li>

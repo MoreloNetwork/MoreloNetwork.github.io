@@ -11,27 +11,35 @@ export class HeaderComponent implements OnInit {
   // Array of supported languages
   public languages: Array<any> = [
     {name: 'English', abb: 'en', flag: 'us'},
-    {name: 'Deutsch', abb: 'de', flag: 'de'},
-    {name: 'Español', abb: 'es', flag: 'es'},
-    {name: 'Français', abb: 'fr', flag: 'fr'},
-    {name: 'Italiano', abb: 'it', flag: 'it'},
-    {name: 'हिन्दी', abb: 'hi', flag: 'in'},
-    {name: '日本の', abb: 'ja', flag: 'jp'},
+    // {name: 'Deutsch', abb: 'de', flag: 'de'},
+    // {name: 'Español', abb: 'es', flag: 'es'},
+    // {name: 'Français', abb: 'fr', flag: 'fr'},
+    // {name: 'Italiano', abb: 'it', flag: 'it'},
+    // {name: '日本の', abb: 'ja', flag: 'jp'},
     {name: 'Polski', abb: 'pl', flag: 'pl'},
-    {name: 'Português', abb: 'pt', flag: 'pt'},
-    {name: 'русский', abb: 'ru', flag: 'ru'},
-    {name: '中国', abb: 'zh', flag: 'cn'},
+    // {name: 'Português', abb: 'pt', flag: 'pt'},
+    // {name: 'русский', abb: 'ru', flag: 'ru'},
+    // {name: '中国', abb: 'zh', flag: 'cn'},
   ];
 
-  constructor(public translate: TranslateService) { }
+  selectedLang: any;
+
+  constructor(public translate: TranslateService) {
+    this.updateSelected();
+  }
 
   ngOnInit(): void {
   }
 
+  // update language name in label
+  updateSelected() {
+    this.selectedLang = this.languages.find(x => x.abb === this.translate.currentLang);
+  }
+
   changeLanguage(lang: string) {
-    console.log(lang)
     this.translate.use(lang);
     localStorage.setItem('lang', lang);
+    this.updateSelected();
   }
 
 }
