@@ -1,4 +1,12 @@
 {
+	"features.1": "Private",
+	"features.2": "Implementation of Ring Signatures and Ring Confidential transactions protocols obfuscate your financial data on the blockchain by default.",
+	"features.3": "Decentralized",
+	"features.4": "Morelos blockchain decentralization is supported globally by individuals, granting network operations independent from private and/or institutional organizations.",
+	"features.5": "Cross-Platform",
+	"features.6": "Morelo provides a complete range of cross-platform software ready for deployment. Our software permits a simple and secured user experience.",
+	"features.7": "Documented",
+	"features.8": "With the contribution of our community members, Morelo offers easy, described documentation and technical support.",
 	"header.1": "Home",
 	"header.2": "Features",
 	"header.3": "Whitepaper",
