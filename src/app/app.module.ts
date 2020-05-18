@@ -2,8 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { fas } from '@fortawesome/free-solid-svg-icons';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './parts/header/header.component';
@@ -27,14 +25,9 @@ import { AboutComponent } from './parts/about/about.component';
   ],
   imports: [
     BrowserModule,
-    NgbModule,
-    FontAwesomeModule
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-  constructor(library: FaIconLibrary) {
-    library.addIconPacks(fas);
-  }
-}
+export class AppModule { }
