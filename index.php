@@ -317,16 +317,54 @@
     </section>
     <!-- end templatemo contact -->
     <!-- start templatemo footer -->
-    <footer class="text-center">
+    <footer class="text-center"><b> Copyright © 2020 MORELO NETWORK<br>
+        <br>
+      </b>
       <div class="container">
         <div class="row">
-          <p>Copyright © 2020 MORELO NETWORK</p>
-        </div>
+          <div class="col-md-2"></div>
+          <div class="col-md-8 text-center">
+        <table border="0" width="100%">
+          <tbody>
+            <tr>
+              <td style="text-align: center; vertical-align: middle; "><a href="https://www.bkex.com/trade/MRL_USDT"
+                  target="_blank"><img src="images/partners/bkex.png" alt="BKEX.COM (MRL/USDT)"
+                    title="BKEX.COM (MRL/USDT)" longdesc="https://www.bkex.com/trade/MRL_USDT"></a></td>
+              <td style="text-align: center; vertical-align: middle; "><a href="https://www.coinbig.com/pl/trade/MRL_USDT"
+                  target="_blank"><img src="images/partners/coinbig.png" alt="CoinBig.com (MRL/USDT)"
+                    title="CoinBig.com (MRL/USDT)"></a></td>
+              <td style="text-align: center; vertical-align: middle; "><a href="https://coinmarketcap.com/currencies/morelo"
+                  target="_blank"><img src="images/partners/cmc.png" alt="CoinMarketCap"
+                    title="CoinMarketCap"></a></td>
+            </tr>
+            <tr>
+              <td style="text-align: center; vertical-align: middle; "><a href="https://cmc.io/coins/morelo/exchanges"
+                  target="_blank"><img src="images/partners/cmcio.png" alt="cmc.io"
+                    title="cmc.io"></a></td>
+              <td style="text-align: center; vertical-align: middle; "><a href="https://www.cryptunit.com/coin/MRL"
+                  target="_blank"><img src="images/partners/cryptunit.png" alt="Cryptunit"
+                    title="Cryptunit"></a></td>
+              <td style="text-align: center; vertical-align: middle; "><a href="https://www.coingecko.com/en/coins/morelo"
+                  target="_blank"><img src="images/partners/coingecko.png" alt="CoinGecko"
+                    title="CoinGecko"></a></td>
+            </tr>
+            <tr>
+              <td style="text-align: center; vertical-align: middle; "><a href="http://niubiquan.com/article/2895"
+                  target="_blank"><img src="images/partners/Niubiquan.png" alt="Niubiquan"
+                    title="Niubiquan"></a></td>
+              <td style="text-align: center; vertical-align: middle; "><a href="https://miningpoolstats.stream/morelo"
+                  target="_blank"><img src="images/partners/pools.png" alt="MiningPoolStats"
+                    title="MiningPoolStats"></a></td>
+              <td style="text-align: center; vertical-align: middle; "><a href="https://coinstats.app/en/coins/morelo"><img
+                    src="images/partners/coinstats.png" alt="coinstats.app" title="coinstats.app"></a><br>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </footer>
     <!-- end templatemo footer -->
     <!-- start back to top -->
-    <!-- end back to top -->
     <script src="js/smoothscroll.js"></script>
     <script src="js/jquery.flexslider.js"></script>
     <script src="js/jquery.MultiLanguage.min.js"></script>
