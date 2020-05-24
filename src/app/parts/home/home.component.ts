@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, transition, animate, style, state } from '@angular/animations';
 import { interval } from 'rxjs';
+import { ScrollService } from 'src/app/services/scroll.service';
 
 @Component({
   selector: 'app-home',
@@ -17,10 +18,9 @@ export class HomeComponent implements OnInit {
 
   slide = 1;
 
-  constructor() { }
+  constructor(public scrl: ScrollService) { }
 
   ngOnInit(): void {
-
     // change slide every 5 seconds
     interval(5000)
     .subscribe(() => {
