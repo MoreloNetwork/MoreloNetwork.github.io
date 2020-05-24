@@ -7,8 +7,9 @@ Created with Bootstrap 3.4.1 and Angular 9.1.9.
 In order to develop:
 1. Install Angular with `npm install -g @angular/cli`
 2. Install project depediencies with `npm install`
-3. Run developement server with `ng serve`
-4. Build with `ng build` add `--prod` flag for production build
+
+Run developement server with `ng serve`.
+Build with `ng build` add `--prod` flag for production build.
 
 In order to translate:
 1. Go to src/assets/i18n
