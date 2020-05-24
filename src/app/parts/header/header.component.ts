@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
   public languages: Array<any> = [
     {name: 'English', abb: 'en', flag: 'us'},
     // {name: 'Deutsch', abb: 'de', flag: 'de'},
-    // {name: 'Español', abb: 'es', flag: 'es'},
+    {name: 'Español', abb: 'es', flag: 'es'},
     // {name: 'Français', abb: 'fr', flag: 'fr'},
     // {name: 'Italiano', abb: 'it', flag: 'it'},
     // {name: '日本の', abb: 'ja', flag: 'jp'},

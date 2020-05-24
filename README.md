@@ -18,6 +18,8 @@ In order to translate:
 4. Add required info to language array in src/app/parts/header/header.component.ts. There are already some languages commented-out.
 5. Add ISO language code to src/app/app.component.ts in lines 13 and 19.
 
+We recommend using Babel Edit.
+
 ## For more information please contact MORELO team at:
 
 - Website: http://morelo.is-great.net/
