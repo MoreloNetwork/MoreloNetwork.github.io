@@ -1,12 +1,14 @@
+// Angular libs
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+// other libs
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
+// component imports
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './parts/header/header.component';
 import { FooterComponent } from './parts/footer/footer.component';
@@ -16,6 +18,7 @@ import { DownloadComponent } from './parts/download/download.component';
 import { ContactComponent } from './parts/contact/contact.component';
 import { AboutComponent } from './parts/about/about.component';
 
+// translation loader to load them from server
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -35,7 +38,6 @@ export function createTranslateLoader(http: HttpClient) {
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    NgbModule,
     TranslateModule.forRoot({
       loader: {
           provide: TranslateLoader,
