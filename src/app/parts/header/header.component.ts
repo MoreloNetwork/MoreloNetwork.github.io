@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { ScrollService } from 'src/app/services/scroll.service';
 
 @Component({
   selector: 'app-header',
@@ -24,11 +25,10 @@ export class HeaderComponent implements OnInit {
 
   selectedLang: any;
 
-  constructor(public translate: TranslateService) {
-    this.updateSelected();
-  }
+  constructor(public translate: TranslateService, public scrl: ScrollService) {  }
 
   ngOnInit(): void {
+    this.updateSelected();
   }
 
   // update language name in label
@@ -37,9 +37,11 @@ export class HeaderComponent implements OnInit {
   }
 
   changeLanguage(lang: string) {
-    this.translate.use(lang);
-    localStorage.setItem('lang', lang);
-    this.updateSelected();
+    // update localStorage and selected language AFTER service has updated currentLang
+    this.translate.use(lang).subscribe(any => {
+      localStorage.setItem('lang', lang);
+      this.updateSelected();
+    });
   }
 
 }
