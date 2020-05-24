@@ -1,0 +1,24 @@
+.slide {
+    width: 100%;
+    float: left;
+    margin-right: -100%;
+    display: block;
+    z-index: 2;
+}
+
+.slider {
+    background: #fff;
+    padding: 0;
+    position: relative;
+    zoom: 1;
+    background-color: #371604;
+    overflow: hidden;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    min-width: 648px;
+    min-height: 270px;
+    display: block;
+}
