@@ -1,6 +1,6 @@
-# MORELO Official WebSite http://morelo.is-great.net/
+# MORELO Official WebSite http://morelo-network.com/
 
-## morelo.is-great.net
+## http://morelo-network.com/
 
 Created with Bootstrap 3.4.1 and Angular 9.1.9.
 
@@ -22,7 +22,7 @@ We recommend using Babel Edit.
 
 ## For more information please contact MORELO team at:
 
-- Website: http://morelo.is-great.net/
+- Website: http://morelo-network.com/
 - Discord: https://discord.gg/eRZUjdG
 - Telegram: https://t.me/morelomrl
 - Twitter:  https://twitter.com/MoreloMrl
