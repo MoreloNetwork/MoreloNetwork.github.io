@@ -72,5 +72,41 @@
 		"7": "Decentralizacja",
 		"8": "Globalna dystrybucja sieci",
 		"9": "O nas"
+	},
+	"timeline":{
+		"1":"Ewolucja Morelo,",
+		"date":{
+			"1":"2019/Q2",
+			"2":"2019/Q3",
+			"3":"2020/Q1",
+			"4":"2020/Q2",
+			"5":"2020/Q2",
+			"6":"2020/Q2",
+			"7":"2020/Q2",
+			"8":"Wkrótce",
+			"9":"Wkrótce"
+		},
+		"title":{
+			"1":"Galaxia StageNet",
+			"2":"Galaxia MainNet",
+			"3":"Morelo MainNet",
+			"4":"Swap z Galaxia",
+			"5":"Implementacja ZeroMQ",
+			"6":"Wpisanie na giełdy",
+			"7":"Oficjalny portfel GUI",
+			"8":"Portfel Android",
+			"9":"Bramka płatności"
+		},
+		"description":{
+			"1":"Sieć Galaxia w fazie testów. Wkrótce gotowa do wydania.",
+			"2":"Koniec testowania sieci Galaxia, przełączanie na MainNet.",
+			"3":"Uruchomienie sieci Morelo MainNet.",
+			"4":"Swap 1:1 z Galaxia na Morelo.",
+			"5":"Implementacja ZeroMQ w naszych usługach.",
+			"6":"Wpisanie na giełdy bkex.com i coinbing.com.",
+			"7":"Pierwsze wydanie oficjalnego portfela GUI.",
+			"8":"Wydanie portfela Android.",
+			"9":"Raczej nie powinienem tego tłumaczyć <bip>"
+		}
 	}
 }
