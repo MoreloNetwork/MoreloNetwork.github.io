@@ -2,7 +2,7 @@
 
 ## http://morelo-network.com/
 
-Created with Bootstrap 3.4.1 and Angular 10.0.4.
+Created with Bootstrap 3.4.1 and Angular 10.0.6.
 
 In order to develop:
 1. Install Angular with `npm install -g @angular/cli`
