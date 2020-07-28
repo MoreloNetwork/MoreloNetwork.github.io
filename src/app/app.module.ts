@@ -17,6 +17,7 @@ import { FeaturesComponent } from './parts/features/features.component';
 import { DownloadComponent } from './parts/download/download.component';
 import { ContactComponent } from './parts/contact/contact.component';
 import { AboutComponent } from './parts/about/about.component';
+import { TimelineComponent } from './parts/timeline/timeline.component';
 
 // translation loader to load them from server
 export function createTranslateLoader(http: HttpClient) {
@@ -32,7 +33,8 @@ export function createTranslateLoader(http: HttpClient) {
     FeaturesComponent,
     DownloadComponent,
     ContactComponent,
-    AboutComponent
+    AboutComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,
