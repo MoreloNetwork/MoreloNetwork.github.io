@@ -10,22 +10,24 @@ import { ScrollService } from 'src/app/services/scroll.service';
 export class HeaderComponent implements OnInit {
 
   // Array of supported languages
+  // It could be made programatically, but it introduces issue with full language name
   public languages: Array<any> = [
-    {name: 'English', abb: 'en', flag: 'us'},
-    // {name: 'Deutsch', abb: 'de', flag: 'de'},
-    {name: 'Español', abb: 'es', flag: 'es'},
-    // {name: 'Français', abb: 'fr', flag: 'fr'},
-    // {name: 'Italiano', abb: 'it', flag: 'it'},
+    {name: 'English', abb: 'en'},
+    // {name: 'Deutsch', abb: 'de'},
+    {name: 'Español', abb: 'es'},
+    // {name: 'Français', abb: 'fr'},
+    // {name: 'Italiano', abb: 'it'},
     // {name: '日本の', abb: 'ja', flag: 'jp'},
-    {name: 'Polski', abb: 'pl', flag: 'pl'},
-    // {name: 'Português', abb: 'pt', flag: 'pt'},
-    // {name: 'русский', abb: 'ru', flag: 'ru'},
-    // {name: '中国', abb: 'zh', flag: 'cn'},
+    {name: 'Polski', abb: 'pl'},
+    // {name: 'Português', abb: 'pt'},
+    // {name: 'русский', abb: 'ru'},
+    // {name: '中国', abb: 'zh'},
   ];
 
   selectedLang: any;
 
-  constructor(public translate: TranslateService, public scrl: ScrollService) {  }
+  constructor(public translate: TranslateService, public scrl: ScrollService) {
+  }
 
   ngOnInit(): void {
     this.updateSelected();
