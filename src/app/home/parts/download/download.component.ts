@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from 'src/app/services/api.service';
+import { ApiService } from 'src/app/shared/services/api.service';
 
 @Component({
   selector: 'app-download',
@@ -18,50 +18,50 @@ export class DownloadComponent implements OnInit {
   exe = false;
 
   ngOnInit(): void {
-    this.api.getMoreloRelease().subscribe((data: any)=>{
+    this.api.getMoreloRelease().subscribe((data: any) => {
       // parse morelo CLI releases, iterate thru them and set flags if found
-      for(let release of data){
-        if(release.assets){
-          for(let asset of release.assets){
-            if(asset.browser_download_url.includes('linux') && !this.linux){
+      for (const release of data){
+        if (release.assets){
+          for (const asset of release.assets){
+            if (asset.browser_download_url.includes('linux') && !this.linux){
               this.linux = asset.browser_download_url;
             }
-            else if(asset.browser_download_url.includes('windows') && !this.windows){
+            else if (asset.browser_download_url.includes('windows') && !this.windows){
               this.windows = asset.browser_download_url;
             }
-            else if(asset.browser_download_url.includes('apple') && !this.macos){
+            else if (asset.browser_download_url.includes('apple') && !this.macos){
               this.macos = asset.browser_download_url;
             }
 
-            if(this.linux && this.windows && this.macos){
+            if (this.linux && this.windows && this.macos){
               break;
             }
           }
         }
       }
-    })
+    });
 
-    this.api.getWalletRelease().subscribe((data: any)=>{
+    this.api.getWalletRelease().subscribe((data: any) => {
       // parse wallet releases, iterate thru them and set flags if found
-      for(let release of data){
-        if(release.assets){
-          for(let asset of release.assets){
-            if(asset.browser_download_url.includes('AppImage') && !this.app){
+      for (const release of data){
+        if (release.assets){
+          for (const asset of release.assets){
+            if (asset.browser_download_url.includes('AppImage') && !this.app){
               this.app = asset.browser_download_url;
             }
-            else if(asset.browser_download_url.includes('deb') && !this.deb){
+            else if (asset.browser_download_url.includes('deb') && !this.deb){
               this.deb = asset.browser_download_url;
             }
-            else if(asset.browser_download_url.includes('exe') && !this.exe){
+            else if (asset.browser_download_url.includes('exe') && !this.exe){
               this.exe = asset.browser_download_url;
             }
 
-            if(this.app && this.deb && this.exe){
+            if (this.app && this.deb && this.exe){
               break;
             }
           }
         }
       }
-    })
+    });
   }
 }
