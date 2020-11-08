@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { ApiService } from './shared/services/api.service';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -8,17 +10,21 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent {
 
-  constructor(public translate: TranslateService) {
-    // Language list
-    translate.addLangs(['en', 'pl', 'es']);
-    translate.setDefaultLang('en');
+  constructor(public translate: TranslateService, private api: ApiService) {
+    // Language list getter
+    this.api.getLanguageList().pipe(
+      map((res: any) => res.languages.map(lang => lang.abb))
+    ).subscribe(res => {
+      translate.addLangs(res);
+      translate.setDefaultLang('en');
 
-    // Simple system for checking and loading language choice from localstorage
-    if (localStorage.getItem('lang') === null) {
-      const browserLang = translate.getBrowserLang();
-      translate.use(browserLang.match(/en|pl|es/) ? browserLang : 'en');
-    } else {
-      translate.use(localStorage.getItem('lang'));
-    }
+      // Simple system for checking and loading previous language choice from localstorage
+      if (localStorage.getItem('lang') === null) {
+        const browserLang = translate.getBrowserLang();
+        translate.use(translate.getLangs().includes(browserLang) ? browserLang : 'en');
+      } else {
+        translate.use(localStorage.getItem('lang'));
+      }
+    });
   }
 }

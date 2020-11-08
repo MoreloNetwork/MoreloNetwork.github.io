@@ -17,7 +17,7 @@
                 <li><a id="nav_explorer" href="http://explorer.morelo-network.com/" target="_blank">{{ 'header.5' | translate | uppercase }}</a></li>
                 <li><a id="nav_contact" href="" (click)="$event.preventDefault();scrl.scroll('contact')">{{ 'header.6' | translate | uppercase }}</a></li>
                 <li>
-                    <a id="lang_selector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="">{{ selectedLang.name | uppercase}}<span class="caret"></span></a>
+                    <a id="lang_selector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="">{{ selectedLang?.name | uppercase}}<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li *ngFor="let lang of languages">
                             <a (click)="changeLanguage(lang.abb)" href="" (click)="$event.preventDefault()">{{ lang.name | uppercase }}</a>
