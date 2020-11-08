@@ -4,7 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 // component imports
 import { HomeComponent } from './home.component';
-import { HeaderComponent } from './parts/header/header.component';
 import { FooterComponent } from './parts/footer/footer.component';
 import { SliderComponent } from './parts/slider/slider.component';
 import { FeaturesComponent } from './parts/features/features.component';
@@ -27,7 +26,6 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     HomeComponent,
-    HeaderComponent,
     FooterComponent,
     SliderComponent,
     FeaturesComponent,
