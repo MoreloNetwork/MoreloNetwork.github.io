@@ -7,6 +7,7 @@ Created with Bootstrap 3.4.1 and Angular 10.2.0.
 How to run:
 1. Install Angular with `npm install -g @angular/cli`
 2. Install project depediencies with `npm install`
+
 Run developement server with `ng serve`.
 Build with `ng build`, add `--prod` flag for production build.
 
