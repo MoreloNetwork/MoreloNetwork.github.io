@@ -3,6 +3,11 @@ Composite Template
 http://www.templatemo.com/preview/templatemo_444_composite
 */
 
+html {
+	scroll-behavior: smooth;
+	overflow-y: scroll;
+  }
+
 body
 {
 	background: #FFF;

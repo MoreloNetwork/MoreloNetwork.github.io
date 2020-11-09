@@ -1,14 +1,16 @@
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ScrollService {
 
-  constructor() { }
+  constructor(private router: Router) {
+  }
 
-  //Scroll element smoothly to middle-ish of viewport
+  // Scroll element smoothly to the middle-ish of viewport
   scroll(id) {
-    document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'center' });
+    this.router.navigate(['/'], { fragment: id });
   }
 }
