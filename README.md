@@ -16,7 +16,8 @@ In order to add new translation:
 2. Copy existing `en.json` file to new <[ISO 3166-1 alpha-2 lowercase language code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)>`.json`
 3. Replace translations with new ones
 4. Add new language into `language-list.json`
-We recommend using Babel Edit.
+
+We recommend using Babel Edit for convenient and simple translation.
 
 ## For more information please contact MORELO team at:
 
