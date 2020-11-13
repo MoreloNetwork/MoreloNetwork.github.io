@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { ScrollService } from 'src/app/services/scroll.service';
+import { ScrollService } from 'src/app/shared/services/scroll.service';
 
 @Component({
   selector: 'app-timeline',
@@ -12,8 +12,8 @@ export class TimelineComponent implements OnInit {
   numberOfElements: any;
   selected = 0;
 
-  constructor(public translate: TranslateService, public scrl: ScrollService) { 
-    //get number of elements
+  constructor(public translate: TranslateService, public scrl: ScrollService) {
+    // get number of elements
     translate.get('timeline.title').subscribe(res => {
       this.numberOfElements = Array.from(Object.entries(res));
     });

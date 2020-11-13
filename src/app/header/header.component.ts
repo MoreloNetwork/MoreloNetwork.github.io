@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 import { TranslateService } from '@ngx-translate/core';
-import { ScrollService } from 'src/app/services/scroll.service';
+
+import { ScrollService } from 'src/app/shared/services/scroll.service';
+import { ApiService } from '../shared/services/api.service';
 
 @Component({
   selector: 'app-header',
@@ -10,27 +14,19 @@ import { ScrollService } from 'src/app/services/scroll.service';
 export class HeaderComponent implements OnInit {
 
   // Array of supported languages
-  // It could be made programatically, but it introduces issue with full language name
-  public languages: Array<any> = [
-    {name: 'English', abb: 'en'},
-    // {name: 'Deutsch', abb: 'de'},
-    {name: 'Español', abb: 'es'},
-    // {name: 'Français', abb: 'fr'},
-    // {name: 'Italiano', abb: 'it'},
-    // {name: '日本の', abb: 'ja', flag: 'jp'},
-    {name: 'Polski', abb: 'pl'},
-    // {name: 'Português', abb: 'pt'},
-    // {name: 'русский', abb: 'ru'},
-    // {name: '中国', abb: 'zh'},
-  ];
+  public languages: Array<any> = [];
 
   selectedLang: any;
 
-  constructor(public translate: TranslateService, public scrl: ScrollService) {
+  constructor(public translate: TranslateService, public scrl: ScrollService, private api: ApiService) {
   }
 
   ngOnInit(): void {
-    this.updateSelected();
+    // download and parse language list
+    this.api.getLanguageList().subscribe((data: any) => {
+      this.languages = data.languages;
+      this.updateSelected();
+    });
   }
 
   // update language name in label

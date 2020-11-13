@@ -1,23 +1,19 @@
 // Angular libs
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 // other libs
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
+// module imports
+import { AppRoutingModule } from './app-routing.module';
+
 // component imports
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './parts/header/header.component';
-import { FooterComponent } from './parts/footer/footer.component';
-import { HomeComponent } from './parts/home/home.component';
-import { FeaturesComponent } from './parts/features/features.component';
-import { DownloadComponent } from './parts/download/download.component';
-import { ContactComponent } from './parts/contact/contact.component';
-import { AboutComponent } from './parts/about/about.component';
-import { TimelineComponent } from './parts/timeline/timeline.component';
+import { HeaderComponent } from './header/header.component';
 
 // translation loader to load them from server
 export function createTranslateLoader(http: HttpClient) {
@@ -27,19 +23,13 @@ export function createTranslateLoader(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    HomeComponent,
-    FeaturesComponent,
-    DownloadComponent,
-    ContactComponent,
-    AboutComponent,
-    TimelineComponent
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
     BrowserAnimationsModule,
+    HttpClientModule,
+    AppRoutingModule,
     TranslateModule.forRoot({
       loader: {
           provide: TranslateLoader,

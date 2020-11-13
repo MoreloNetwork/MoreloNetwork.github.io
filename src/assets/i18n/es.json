@@ -60,9 +60,10 @@
 		"3": "Whitepaper",
 		"4": "Descargar",
 		"5": "Explorador de bloques",
-		"6": "Contacto"
+		"6": "Contacto",
+		"7": "Stats"
 	},
-	"home":{
+	"slider":{
 		"1": "Transacciones ofuscadas",
 		"2": "Blockchain con orientación opaca & privada",
 		"3": "Lee mas",

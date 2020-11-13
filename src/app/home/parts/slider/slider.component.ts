@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, transition, animate, style, state } from '@angular/animations';
 import { interval } from 'rxjs';
-import { ScrollService } from 'src/app/services/scroll.service';
+import { ScrollService } from 'src/app/shared/services/scroll.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
+  selector: 'app-slider',
+  templateUrl: './slider.component.html',
+  styleUrls: ['./slider.component.scss'],
   animations: [
     trigger('fade', [
       state('void', style({ opacity: 0 })),
@@ -14,7 +14,7 @@ import { ScrollService } from 'src/app/services/scroll.service';
     ])
   ]
 })
-export class HomeComponent implements OnInit {
+export class SliderComponent implements OnInit {
 
   slide = 1;
 

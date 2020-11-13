@@ -60,9 +60,10 @@
 		"3": "Whitepaper",
 		"4": "Get Morelo",
 		"5": "Block explorer",
-		"6": "Contact"
+		"6": "Contact",
+		"7": "Stats"
 	},
-	"home":{
+	"slider":{
 		"1": "Obfuscated Transactions",
 		"2": "Privacy & Opaque oriented blockchain",
 		"3": "Learn More",
