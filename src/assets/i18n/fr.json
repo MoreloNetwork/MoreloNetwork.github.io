@@ -1,0 +1,113 @@
+{
+	"about":{
+		"1": "Intraçable et Anonyme",
+		"10": "MRL",
+		"11": "Algorithme",
+		"12": "RandomARQ",
+		"13": "Consensus",
+		"14": "POW",
+		"2": "Blockchain opaque axée sur la confidentialité",
+		"3": "Fourniture",
+		"4": "75 Millions",
+		"5": "Temps de bloc",
+		"6": "120 Secondes",
+		"7": "Décimales",
+		"8": "9",
+		"9": "Abréviation"
+	},
+	"contact":{
+		"1": "Contact",
+		"2": "Utilisez les coordonnées ci-dessous pour entrer en contact avec la communauté Morelo (MRL).",
+		"3": "E-mail",
+		"4": "Discord",
+		"5": "Telegram",
+		"6": "Twitter",
+		"7": "Bitcointalk",
+		"8": "GitHub"
+	},
+	"download":{
+		"1": "Obtenez Morelo",
+		"10": "Linux CLI",
+		"11": "Logiciel client Linux 64 bits",
+		"12": "macOS CLI",
+		"13": "Logiciel client macOS",
+		"14": "Portefeuille graphique Linux",
+		"15": "AppImage",
+		"16": "Morelo-Network",
+		"17": "Code sur GitHub",
+		"2": "Dans cette section, vous pouvez trouver et télécharger la dernière version disponible du logiciel Morelo, ainsi que des portefeuilles matériels, légers et mobiles.",
+		"3": "Le portefeuille graphique offre une interface utilisateur agréable, adaptable à tous types d'utilisateurs, mais il est particulièrement recommandé aux personnes moins techniques qui souhaitent envoyer et recevoir rapidement des MRL.",
+		"4": "Portefeuille graphique Windows",
+		"5": "Logiciel de portefeuille graphique Windows",
+		"6": "Portefeuille graphique Linux",
+		"7": "Compatible (deb)",
+		"8": "Windows CLI",
+		"9": "Logiciel client Windows"
+	},
+	"features":{
+		"1": "Privée",
+		"2": "La mise en œuvre des protocoles de transactions Ring Signatures et Ring Confidential obscurcit vos données financières sur la blockchain par défaut.",
+		"3": "Décentralisé",
+		"4": "La décentralisation de la blockchain de Morelo est soutenue dans le monde entier par des individus, permettant des opérations de réseau indépendantes des organisations privées et/ou institutionnelles.",
+		"5": "Multiplateforme",
+		"6": "Morelo propose une gamme complète de logiciels multiplateformes prêts à être déployés. Notre logiciel permet une expérience utilisateur simple et sécurisée.",
+		"7": "Documenté",
+		"8": "Avec la contribution des membres de notre communauté, Morelo offre une documentation simple et décrite; et support technique."
+	},
+	"header":{
+		"1": "Home",
+		"2": "Traits",
+		"3": "Livre blanc",
+		"4": "Obtenez Morelo",
+		"5": "Explorateur de blocs",
+		"6": "Contact",
+		"7": "Statistiques"
+	},
+	"slider":{
+		"1": "Transactions obscurcies",
+		"2": "Blockchain orientée confidentialité et opaque",
+		"3": "Apprendre encore plus",
+		"4": "Multi multiplateforme",
+		"5": "Déploiement de logiciel entièrement compatible",
+		"6": "Obtenez Morelo",
+		"7": "Décentralisation pure",
+		"8": "Distribution réseau mondiale",
+		"9": "À propos de nous"
+	},
+	"timeline":{
+		"1":"Évolution de Morelo,",
+		"date":{
+			"1":"2019/Q2",
+			"2":"2019/Q3",
+			"3":"2020/Q1",
+			"4":"2020/Q2",
+			"5":"2020/Q2",
+			"6":"2020/Q2",
+			"7":"2020/Q2",
+			"8":"Bientôt",
+			"9":"Bientôt"
+		},
+		"title":{
+			"1":"Galaxia StageNet",
+			"2":"Galaxia MainNet",
+			"3":"Morelo MainNet",
+			"4":"Échanger avec Galaxia",
+			"5":"Implémentation de ZeroMQ",
+			"6":"Entrée en bourse",
+			"7":"Version officielle du portefeuille graphique",
+			"8":"Portefeuille Android",
+			"9":"Service de passerelle de paiement"
+		},
+		"description":{
+			"1":"Réseau Galaxia en phase de test. Bientôt prêt pour la publication.",
+			"2":"Fin des tests de réseau Galaxia, passage à MainNet.",
+			"3":"Lancement de MainNet du réseau Morelo.",
+			"4":"Passer 1:1 du réseau Galaxia au réseau Morelo.",
+			"5":"Implémentation de ZeroMQ dans nos services.",
+			"6":"Inscription sur les bourses bkex.com et coinbing.com.",
+			"7":"Publication de la première version du portefeuille graphique officiel.",
+			"8":"Portefeuille Android publié.",
+			"9":"Service de paiement global via Morelo"
+		}
+	}
+}
