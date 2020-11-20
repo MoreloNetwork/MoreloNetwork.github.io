@@ -9,6 +9,10 @@
             "abb":"es"
         },
         {
+        	"name":"Français",
+        	"abb":"fr"
+        },
+        {
             "name":"Polski",
             "abb":"pl"
         }
