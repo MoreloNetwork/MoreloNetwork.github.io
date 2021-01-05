@@ -32,7 +32,6 @@ npm-debug.log
 testem.log
 /typings
 .browserslistrc
-tsconfig.app.json
 tsconfig.spec.json
 
 # e2e
