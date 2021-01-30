@@ -1,4 +1,4 @@
-# MORELO Official Website
+# Morelo (MRL) Official Website
 
 ## http://morelo-network.com/
 
@@ -22,6 +22,6 @@ We recommend using Babel Edit for convenient and simple translation.
 ## For more information please contact MORELO team at:
 
 - Website: http://morelo-network.com/
-- Discord: https://discord.gg/eRZUjdG
-- Telegram: https://t.me/morelomrl
-- Twitter:  https://twitter.com/MoreloMrl
+- Discord: https://discord.gg/Ywnmr6HBWT
+- Telegram: -
+- Twitter: -
