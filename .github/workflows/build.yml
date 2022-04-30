@@ -1,20 +1,16 @@
-name: Build
+name: CI
 on:
   push:
-    branches:
-      - master
-
+    branches: [ master ]
 jobs:
-  name: Setup Node.js
-      uses: actions/setup-node@v2
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1
       with:
-        node-version: '16'
-
-    - name: Install dependencies
-      run: npm install
-
-    - name: Run tests
-      run: npm run test:headless
-
-    - name: Build
-      run: npm run build:prod
+        node-version: '12.x'
+    - run: npm install
+    - run: npm install -g @angular/cli > /dev/null
+    - run: ng build --prod
