@@ -12,7 +12,7 @@ export class StatsComponent implements OnInit {
 	ngOnInit(): void {
 		function updateStats()
 		{
-			var network_info = JSON.parse(httpGet("https://explorer.morelo-network.com/api/networkinfo"))
+			var network_info = JSON.parse(httpGet("https://explorer.morelonetwork.pl/api/networkinfo"))
 			diff_element.innerHTML = network_info.data.difficulty;
 			hashrate_element.innerHTML = Suffix(network_info.data.hash_rate);
 			height_element.innerHTML = network_info.data.height;
@@ -32,6 +32,8 @@ export class StatsComponent implements OnInit {
 				num = (num / 1000).toFixed(2) + " kH/s"
 			} else if (num < 1000000000) {
 				num = (num / 1000000).toFixed(2) + " MH/s"
+			} else if (num < 1000000000000) {
+				num = (num / 1000000000).toFixed(2) + " GH/s"
 			}
 			return num
 		}
