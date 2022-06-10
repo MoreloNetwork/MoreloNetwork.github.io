@@ -8,7 +8,7 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  github = 'https://api.github.com/repos/morelo-network/';
+  github = 'https://api.github.com/repos/morelonetwork/';
 
   getMoreloRelease(){
     return this.http.get(this.github + 'morelo/releases');

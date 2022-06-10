@@ -1,6 +1,6 @@
 # Morelo (MRL) Official Website
 
-## http://morelo-network.com/
+## http://morelonetwork.pl/
 
 Created with Bootstrap 3.4.1 and Angular 10.2.0.
 
@@ -21,7 +21,7 @@ We recommend using Babel Edit for convenient and simple translation.
 
 ## For more information please contact MORELO team at:
 
-- Website: http://morelo-network.com/
-- Discord: https://discord.gg/Ywnmr6HBWT
-- Telegram: -
-- Twitter: -
+- Website: http://morelonetwork.pl/
+- Discord: https://discord.gg/36HR7KmYCa
+- Telegram: https://t.me/morelonetwork
+- Twitter: https://twitter.com/MoreloNetwork
