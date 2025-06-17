@@ -30,9 +30,10 @@ We welcome feedback, suggestions, and contributions to improve our website and e
 
 ## Contact
 
-- **Discord:** [discord.gg/JB9CeFW66g](https://discord.gg/JB9CeFW66g)
+- **Discord:** [discord.morelonetwork.pl](https://discord.morelonetwork.pl)
 - **X / Twitter:** [twitter.com/MoreloNetwork](https://twitter.com/MoreloNetwork)
 - **Facebook:** [www.facebook.com/profile.php?id=61551589695937](https://www.facebook.com/profile.php?id=61551589695937)
 - **Bitcointalk:** [bitcointalk.org/index.php?topic=5233023](https://bitcointalk.org/index.php?topic=5233023)
+- **Telegram:** [telegram.morelonetwork.pl](https://telegram.morelonetwork.pl)
 
 **Together, let's continue to innovate and shape the future of privacy-centric finance.**
