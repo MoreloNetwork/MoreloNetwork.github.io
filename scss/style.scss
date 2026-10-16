@@ -2314,6 +2314,61 @@ input, textarea, select, .form-control {
 	overflow: hidden;
 }
 
+.partner-carousel {
+	overflow: hidden;
+	width: 100%;
+}
+
+.partner-track {
+	display: flex;
+	width: max-content;
+	animation: partners-scroll 28s linear infinite;
+	will-change: transform;
+}
+
+.partner-carousel:hover .partner-track {
+	animation-play-state: paused;
+}
+
+.partner-set {
+	flex: 0 0 auto;
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 170px;
+		height: 70px;
+		margin: 0 12px;
+	}
+	img {
+		max-width: 100%;
+		max-height: 44px;
+		padding: 3px 0;
+	}
+}
+
+@keyframes partners-scroll {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-50%);
+	}
+}
+
+@media (max-width: 575.98px) {
+	.partner-set a {
+		width: 130px;
+		margin: 0 8px;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.partner-track {
+		animation: none;
+	}
+}
+
 #download .repo1 > div {
 	background-color: #1d2227 !important;
 }

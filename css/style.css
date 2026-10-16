@@ -9992,6 +9992,71 @@ input, textarea, select, .form-control { background-color: #1d2227 !important; b
   background-image: none !important;
   color: #fff !important; }
 
+ .partner-carousel {
+  overflow: hidden;
+  width: 100%; }
+
+.partner-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: max-content;
+  -webkit-animation: partners-scroll 28s linear infinite;
+  animation: partners-scroll 28s linear infinite;
+  will-change: transform; }
+
+.partner-carousel:hover .partner-track {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused; }
+
+.partner-set {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto; }
+  .partner-set a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 170px;
+    height: 70px;
+    margin: 0 12px; }
+  .partner-set img {
+    max-width: 100%;
+    max-height: 44px;
+    padding: 3px 0; }
+
+@-webkit-keyframes partners-scroll {
+  from {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  to {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); } }
+
+@keyframes partners-scroll {
+  from {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  to {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); } }
+
+@media (max-width: 575.98px) {
+  .partner-set a {
+    width: 130px;
+    margin: 0 8px; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .partner-track {
+    -webkit-animation: none;
+    animation: none; } }
+
 @keyframes loader-dash {
   0% {
     stroke-dasharray: 1, 200;
