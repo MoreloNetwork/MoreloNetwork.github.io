@@ -671,6 +671,14 @@ h1, h2, h3, h4, h5,
 		}
 	}
 }
+
+#features {
+	margin-top: 48px;
+	@include media-breakpoint-down(sm){
+		margin-top: 30px;
+	}
+}
+
 .intro{
 	width: 100%;
 	background: $darken;
@@ -1628,7 +1636,7 @@ textarea.form-control {
 	}
 	.block-18{
 		padding: 0 20px;
-		background: $darken;
+		background: #343a40 !important;
 		position: relative;
 		.icon{
 			position: absolute;
@@ -2217,4 +2225,99 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px;
   }
+}
+body {
+	background: #121212;
+	color: #c7c7c7;
+}
+
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5, .ftco-section h2, .ftco-section h3 {
+	color: #f1f1f1;
+}
+
+.ftco-section, .ftco-footer {
+	background: #121212;
+}
+
+.ftco-counter.ftco-section {
+	background: transparent;
+}
+
+.ftco-counter .counter-wrap + .counter-wrap {
+	margin-top: 16px;
+}
+
+.bg-light, .card, .table, .modal-content, .dropdown-menu {
+	background-color: #1d2227 !important;
+	color: #c7c7c7;
+}
+
+.table td, .table th { border-color: rgba(255,255,255,.1); }
+
+input, textarea, select, .form-control {
+	background-color: #1d2227 !important;
+	border-color: rgba(255,255,255,.2) !important;
+	color: #f1f1f1 !important;
+}
+
+.ftco-navbar-light.scrolled {
+	background: #1d2227 !important;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,.35);
+}
+.ftco-navbar-light.scrolled .nav-link, .ftco-navbar-light.scrolled .navbar-brand { color: #fff !important; }
+.ftco-navbar-light.scrolled .navbar-toggler { color: rgba(255,255,255,.7) !important; border-color: rgba(255,255,255,.7) !important; }
+
+#ftco-loader.fullscreen { background-color: #121212; }
+
+.repo1 .gh,
+.repo1 .gh .p-4 {
+	background-color: #1d2227 !important;
+	color: #c7c7c7 !important;
+}
+
+.repo1 .gh .text-gray,
+.repo1 .gh .text-gray-dark,
+.repo1 .gh .muted-link {
+	color: #adb5bd !important;
+}
+
+.repo1,
+.repo1 .gh {
+	box-shadow: 4px 4px 8px rgba(0,0,0,.55) !important;
+}
+
+.repo1 .gh .topic-tag {
+	background-color: #343a40 !important;
+	color: #c7c7c7 !important;
+}
+
+.repo1 .gh .topic-tag:hover {
+	background-color: #495057 !important;
+}
+
+.repo1 .gh .btn.btn-sm {
+	background: #343a40 !important;
+	background-image: none !important;
+	border-color: #495057 !important;
+	color: #c7c7c7 !important;
+}
+
+.repo1 .gh .btn.btn-sm:hover {
+	background: #495057 !important;
+	background-image: none !important;
+	color: #fff !important;
+}
+
+.repo1 {
+	background: #1d2227 !important;
+	box-shadow: 4px 4px 8px rgba(0,0,0,.55) !important;
+	overflow: hidden;
+}
+
+#download .repo1 > div {
+	background-color: #1d2227 !important;
+}
+
+.repo1 .gh .border-bottom {
+	border-bottom-color: #1d2227 !important;
 }
